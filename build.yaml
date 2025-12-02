@@ -19,6 +19,7 @@
 #
 ---
 include:
-  - board: seeeduino_xiao_rp2040
-    shield: qaz
-    cmake-args: -DZEPHYR_SCA_VARIANT=dtdoctor
+  - board: coffeevan
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: coffeevan_with_studio
