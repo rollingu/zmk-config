@@ -36,8 +36,8 @@
         nav {
             display-name = "Nav";
             bindings = <
-&trans         &trans     &kp HOME   &kp UP      &kp END    &kp PG_UP    &trans     &trans     &trans        &trans     &trans       &trans
-&trans         &trans     &kp LEFT   &kp DOWN    &kp RIGHT  &kp PG_DOWN  &trans     &trans     &trans        &trans     &trans       &trans
+&trans         &trans     &kp HOME   &kp UP      &kp END    &kp PG_UP   &trans     &trans     &trans        &trans     &trans       &trans
+&trans         &trans     &kp LEFT   &kp DOWN    &kp RIGHT  &kp PG_DN   &trans     &trans     &trans        &trans     &trans       &trans
 &trans         &trans     &trans     &kp LS(TAB) &kp TAB    &trans      &trans     &trans     &trans        &trans     &trans       &trans
 &trans         &trans     &trans     &trans      &trans                              &trans     &trans        &trans  &trans
             >;
