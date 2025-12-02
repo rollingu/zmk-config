@@ -21,3 +21,4 @@
 include:
   - board: seeeduino_xiao_rp2040
     shield: qaz
+    cmake-args: -DZEPHYR_SCA_VARIANT=dtdoctor
