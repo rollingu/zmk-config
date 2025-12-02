@@ -5,7 +5,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE  0
-#define FUNC  1
+#define NAV   1
 
 / {
     combos {
@@ -42,5 +42,5 @@
 &trans         &trans     &trans     &trans      &trans                              &trans     &trans        &trans  &trans
             >;
         };
-        };
+    }
 };
