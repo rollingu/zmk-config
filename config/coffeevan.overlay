@@ -13,6 +13,5 @@
         label = "WS2812";
         pin = <16>;                   /* GP16 pour les LEDs */
         chain-length = <20>;          /* Nombre total de LEDs */
-        color-mapping = <LED_COLOR_MAPPING_RGB>;
     };
 };
