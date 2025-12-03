@@ -8,7 +8,9 @@
 #define NAV   1
 
 / {
-    
+    &led_strip {
+        chain-length = <18>;
+    };
     behaviors {
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
