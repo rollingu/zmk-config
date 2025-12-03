@@ -8,9 +8,6 @@
 #define NAV   1
 
 / {
-    chosen {
-        zmk,underglow = &led_strip;
-    };
     
     behaviors {
         hml: home_row_mod_left {
