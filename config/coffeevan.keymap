@@ -8,6 +8,23 @@
 #define NAV   1
 
 / {
+    chosen {
+        zmk,underglow = &led_strip;
+    };
+    &spi0 {
+    status = "okay";
+
+    led_strip: ws2812@0 {
+        compatible = "worldsemi,ws2812-spi";
+        label = "WS2812";
+        reg = <0>;
+        spi-max-frequency = <4000000>;
+        chain-length = <20>;          
+        color-mapping = <LED_COLOR_MAPPING_RGB>;
+        spi-one-frame = <0x70>;
+        spi-zero-frame = <0x60>;
+    };
+};
     behaviors {
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
