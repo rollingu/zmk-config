@@ -12,6 +12,5 @@
         compatible = "raspberrypi,pico-ws2812";
         label = "WS2812";
         pin = <16>;                   /* GP16 pour les LEDs */
-        chain-length = <20>;          /* Nombre total de LEDs */
     };
 };
