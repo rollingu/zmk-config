@@ -38,9 +38,6 @@
         zmk,underglow = &ws2812;
     };
     
-	aliases {
-		led0 = &user_led;
-	};
     
 	leds {
 		compatible = "gpio-leds";
