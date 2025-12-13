@@ -2,6 +2,14 @@
 #include <dt-bindings/led/led.h>
 #include <dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h>
 
+&pinctrl {
+    ws2812_pio0_default: ws2812_pio0_default {
+        group1 {
+            pinmux = <PIO0_P16>;
+        };
+    };
+};
+
 &pio0 {
 	status = "okay";
 
@@ -14,7 +22,7 @@
 
 		ws2812: ws2812 {
 			status = "okay";
-			gpios = <&gpio0 14 GPIO_ACTIVE_HIGH>;
+			gpios = <&gpio0 16 GPIO_ACTIVE_HIGH>;
 			chain-length = <1>;
 			color-mapping = <LED_COLOR_ID_GREEN
 					 LED_COLOR_ID_RED
@@ -27,6 +35,19 @@
 
 / {
     chosen {
-        zmk,underglow = &led_strip;
+        zmk,underglow = &ws2812;
     };
+    
+	aliases {
+		led0 = &red_led;
+	};
+    
+	leds {
+		compatible = "gpio-leds";
+
+		user_led: user_led {
+			gpios = <&gpio0 16 GPIO_ACTIVE_LOW>;
+			label = "USER_LED";
+		};
+	};
 };
