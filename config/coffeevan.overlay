@@ -36,6 +36,7 @@
 / {
     chosen {
         zmk,underglow = &led_strip;
+		zephyr,settings-partition = &storage_partition;
     };
     
     
